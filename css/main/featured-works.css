@@ -1,0 +1,139 @@
+@import url(css/style.css);
+
+
+.section-featured-works__container {}
+
+.title-syte {}
+
+.featured-works__block {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 18px;
+}
+
+.featured-works__img {
+   width: 246px;
+   height: 180px;
+   flex-shrink: 0;
+}
+
+/* .featured-works__img img {
+   width: fit-content;
+} */
+
+/* на сколько это правильно ?  flex-shrink: 0;  width: fit-content;*/
+
+.featured-works__block-text {}
+
+.featured-works__title {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 44px;
+}
+
+.featured-works__data {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 29px;
+   color: #8695A4;
+}
+
+.featured-works__data span {
+   background: #142850;
+   border-radius: 16px;
+   width: 62px;
+   height: 25px;
+   font-size: 18px;
+   line-height: 60px;
+   color: #FFFFFF;
+   padding: 0 10px;
+   margin-right: 36px;
+   margin-top: 16px;
+   margin-bottom: 22px;
+}
+
+
+.featured-works__text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   /* flex: 1; */
+   /* max-width: 594px; */
+   /* display: flex;
+	flex: 1 1 auto; */
+   /* width: fit-content; */
+   /* спросить почему не работает flex: 1 1 auto;
+
+	https: //webdevblog.ru/grid-dlya-maketov-flexbox-dlya-komponentov/ 
+	*/
+}
+
+.line858 {
+   border: 1px solid #E0E0E0;
+   margin: 31px 0;
+}
+
+
+/* -------------------------------------- */
+@media (max-width:992px) {
+   .section-featured-works__container {
+      width: calc(100% - 50px);
+   }
+
+   .featured-works__block {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .featured-works__data span {
+      margin-right: 25px;
+   }
+
+   .featured-works__img {
+      width: 339px;
+      height: 230px;
+   }
+
+   .title-syte_centr {
+      justify-content: center;
+   }
+}
+
+
+@media (max-width:576px) {
+   .section-featured-works__container {
+      width: calc(100% - 35px);
+   }
+
+   .featured-works__data span {
+      margin-right: 23px;
+   }
+
+
+}
+
+@media (max-width:375px) {
+   .section-featured-works__container {
+      width: calc(100% - 18px);
+   }
+
+   .featured-works__data span {
+      margin-right: 22px;
+   }
+
+   .featured-works__img {
+      width: calc(100% - 13px);
+      height: calc(100% - 13px);
+		/* нормально ли такое решение для адаптива картинки ?  */
+   }
+}
+
+/* -------------------------------------- */
+/*
+xs: 320px,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px */
